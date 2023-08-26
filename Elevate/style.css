@@ -1,0 +1,49 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.preferences form label, .recommendations ul li {
+    margin-bottom: 0.5em;
+}
+
+.preferences form select, .preferences form input[type="range"], .preferences form button {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+.recommendations ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+.recommendations ul li img {
+    max-width: 100%;
+    height: auto;
+}
+.recommendations ul li h3 {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+.recommendations ul li p {
+    font-size: 0.9em;
+    color: #777;
+}
